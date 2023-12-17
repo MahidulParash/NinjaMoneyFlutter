@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "131369973023",
+    "project_id": "ninja-money-flutter-db",
+    "storage_bucket": "ninja-money-flutter-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131369973023:android:cf552ed9d39c62dff7ac2a",
+        "android_client_info": {
+          "package_name": "com.example.ninja_money"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNue9PIfzxsmvhouMt_LGGX-G1AOFvxb8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
