@@ -22,7 +22,6 @@ class ProfilePage extends StatelessWidget {
         title: Text("P R O F I L E"),
         backgroundColor: Theme.of(context).colorScheme.secondary,
       ),
-      drawer: const MyDrawer(),
       backgroundColor: Theme.of(context).colorScheme.background,
       body: FutureBuilder<DocumentSnapshot<Map<String, dynamic>>>(
           future: getUserDetails(),

@@ -53,7 +53,6 @@ class MyDrawer extends StatelessWidget {
                 ),
                 onTap: () {
                   Navigator.pop(context);
-                  Navigator.pushNamed(context, '/home_page');
                 },
               ),
             ),

@@ -109,25 +109,32 @@ class TransactionList extends StatelessWidget {
                                         .inversePrimary,
                                   ),
                                   borderRadius: BorderRadius.circular(10)),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text(transactions[index].category),
-                                  Text(
-                                    '৳ ${transactions[index].amount.toString()}',
-                                    style: TextStyle(fontSize: 24),
-                                  ),
-                                  Text(
-                                    transactions[index].description,
-                                    style: TextStyle(fontSize: 8),
-                                  ),
-                                  Text(
-                                    DateFormat('dd-MM-yy HH:mm a')
-                                        .format(transactions[index]
-                                            .timestamp
-                                            .toDate())
-                                        .toString(),
-                                    style: TextStyle(fontSize: 8),
+                                  Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(transactions[index].category),
+                                      Text(
+                                        '৳ ${transactions[index].amount.toString()}',
+                                        style: TextStyle(fontSize: 24),
+                                      ),
+                                      Text(
+                                        transactions[index].description,
+                                        style: TextStyle(fontSize: 8),
+                                      ),
+                                      Text(
+                                        DateFormat('dd-MM-yy HH:mm a')
+                                            .format(transactions[index]
+                                                .timestamp
+                                                .toDate())
+                                            .toString(),
+                                        style: TextStyle(fontSize: 8),
+                                      ),
+                                    ],
                                   ),
                                 ],
                               )),
