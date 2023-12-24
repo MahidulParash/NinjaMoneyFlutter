@@ -18,16 +18,15 @@ class _IncomePageState extends State<IncomePage> {
   User? user = FirebaseAuth.instance.currentUser;
 
   List<String> categories = [
-    'Food',
-    'Transport',
-    'Clothes',
-    'Necessities',
-    'Others'
+    'Salary',
+    'Gift',
+    'Profit',
+    'Others',
   ];
 
   String selectedType = 'Income';
 
-  String selectedCategory = 'Food';
+  String selectedCategory = 'Salary';
 
   Map<String, dynamic> createTransactionData({
     required String type,

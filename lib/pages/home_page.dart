@@ -25,12 +25,18 @@ class _HomePageState extends State<HomePage> {
     'Expense',
     'Income',
   ];
-  List<String> categories = [
+  List<String> expenseCategories = [
     'Food',
     'Transport',
     'Clothes',
     'Necessities',
     'Others'
+  ];
+  List<String> incomeCategories = [
+    'Salary',
+    'Gift',
+    'Profit',
+    'Others',
   ];
   String selectedType = 'Expense';
   String selectedCategory = 'Food';
@@ -109,7 +115,10 @@ class _HomePageState extends State<HomePage> {
                       selectedCategory = newValue!;
                     });
                   },
-                  items: categories.map((String category) {
+                  items: (selectedType == 'Income'
+                          ? incomeCategories
+                          : expenseCategories)
+                      .map((String category) {
                     return DropdownMenuItem<String>(
                       value: category,
                       child: Text(category),
